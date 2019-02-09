@@ -17,8 +17,42 @@ footer {
 }
 
 .set {
-    margin: 9% auto;
+    margin: 7% auto 10% auto;
 }
+
+
+/* Add background images of drum's component */
+
+.w {
+    background-image: url("tom1.png");
+}
+  
+.a {
+    background-image: url("tom2.png");
+}
+  
+.s {
+    background-image: url("tom3.png");
+}
+  
+.d {
+    background-image: url("tom4.png");
+}
+  
+.j {
+    background-image: url("snare.png");
+}
+  
+.k {
+    background-image: url("crash.png");
+}
+  
+.l {
+    background-image: url("kick.png");
+}
+
+
+/* Styles to each drum */
 
 .drum {
     outline: none;
@@ -36,4 +70,12 @@ footer {
     text-align: center;
     margin: 13px;
     background-color: #f1efec;
+}
+
+
+/* Add styles to each drum when it's pressed */
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #f1efec;
+    opacity: 0.5;
 }
