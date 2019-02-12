@@ -13,8 +13,6 @@ for (var i = 0; i < numberOfDrumButtons; i ++) {
 
         // Select THIS of each querySelectorAll('.drum')[i] to use it in functions when clicked
         var buttonInnerHTML = this.innerHTML;
-
-        console.log('pressed');
         
         // Call functions
         makeSound(buttonInnerHTML);
@@ -34,6 +32,7 @@ document.addEventListener('keypress', function (event) {
     buttonAnimation(event.key);
 
 });
+
 
 
 
@@ -112,6 +111,32 @@ function makeSound(key) {
   
 }
 }
+
+
+
+
+// Add buttonAnimation function to change style of button when pressed it
+
+
+function buttonAnimation(currentKey) {
+
+ 
+ 
+	var activeButton = document.querySelector("." + currentKey);
+
+  
+	activeButton.classList.add("pressed");
+
+  
+	setTimeout(function() {
+    
+	activeButton.classList.remove("pressed");
+  }, 100);
+
+
+
+}
+
 
 
 
